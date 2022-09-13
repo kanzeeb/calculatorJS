@@ -36,13 +36,13 @@ resolve() {
     const currentNumber = parseFloat(this.currentOperand);
     if(isNaN(prevNumber) || isNaN(currentNumber)) return;
     if(this.operation == '+')
-        math = (prevNumber + currentNumber).toFixed(4)
+        math = (prevNumber + currentNumber).toFixed(5)
     else if(this.operation == '-')
-        math = (prevNumber - currentNumber).toFixed(4) 
+        math = (prevNumber - currentNumber).toFixed(5) 
     else if(this.operation == '*')
-        math = (prevNumber * currentNumber).toFixed(4)
+        math = (prevNumber * currentNumber).toFixed(5)
     else if(this.operation == '÷')
-        math = (prevNumber / currentNumber).toFixed(4)
+        math = (prevNumber / currentNumber).toFixed(5)
     else return
 
     this.currentOperand = math;
